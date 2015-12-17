@@ -1,0 +1,95 @@
+body {
+    background-image: url("http://www.msrstudiosny.com/wp-content/uploads/2012/10/StudioB_960x540.jpg");
+    background-size: 100%;
+    /*makes far background an image of a recording studio, and sets the color to white*/
+    background-attachment: fixed;
+}
+
+#header {
+    background-color:rgba(0,0,0,0.75);
+    width: 70%;
+    position: relative;
+    left: 15%;
+    text-align: center;
+    color: white;
+}
+
+#nav{
+    background-color: rgba(0,0,0,0.75);
+    text-align: center;
+    width: 10%;
+    margin-left: 180px;
+    position: relative; left: -30%
+    left: 15%;
+}
+
+#content{
+    background-color:rgba(0,0,0,0.75);
+    color: white;
+    text-align: center;
+    width: 55%;
+    position: relative;
+    right: -30%;
+    bottom: 170px;
+    -webkit-animation: fadein 2s;
+
+
+}
+
+#footer{
+    background-color:rgba(0,0,0,0.75);
+    text-align: center;
+    width: 70%;
+    position: relative;
+    left: 15%;
+
+}
+/*sets the main divs and aligns them accordingly to make the website better spaced*/
+
+#homeButton{
+    height: 69px;
+    width: 120px;
+    float: left;
+    position: relative;
+}
+/*styles out and positions the logo at top left of screen*/
+
+
+#bigContent{
+    background-color:rgba(0,0,0,0.75);
+    text-align: center;
+    width: 70%;
+    position: relative;
+    left: 15%;
+/* alternative div used for forms that are intended to cover the whole page without the nav bar in the way*/
+}
+
+{}
+p , h3 , li {
+    color: white;
+}
+
+a:link{
+    color: darkred;
+    background-color: transparent;
+}
+a:visited{
+    color: darkred;
+    background-color: transparent;
+}
+a:hover{
+    color: #ff0705;
+    background: transparent;
+}
+a:active{
+    color: #ff0705;
+    background-color: transparent;
+}
+
+/*Animations*/
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to 	{opacity: 1;}
+}
+/*End of Animations*/
+

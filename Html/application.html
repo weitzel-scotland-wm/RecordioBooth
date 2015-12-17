@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="../javascript/scipt.js" type="text/javascript"></script>
+<script src="../jquery.js" type="text/javascript"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Recordio</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<div style="position: relative;right:187px;  z-index:1000;">
+    <button id="signUp" style="float:right;">Sign Up</button>
+    <button id="login" style="float:right;">Login</button>
+</div>
+<a href="index.html">
+    <button  id="homeButton" style="position: relative; z-index:1000"><img width="100%" height="110%" src="logo.png">
+    </button></a>
+
+
+<div id="header">
+    <p style="font-size: 60px;font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+">Recordio</p>
+</div>
+
+<div id="bigContent" style="color:white">
+    <br>
+    <form action="action.php">
+        <div style="position:relative; left:-33%">
+        Name:<br>
+        <input type="text" name="name" value="">
+        <br><br>
+        Date of Usage:<br>
+        <input type="date" name="date" value="">
+        <br><br>
+        Time of Usage:<br> <br>
+        <input type="time" name="time" value=""> Through
+        <input type="time" name="time" value="">
+        </div>
+        <div style="position:relative;left: 33%; top: -165px;">
+        Credit Card:
+            Name (On card):<br>
+            <input type="text" name="cardName" value="">
+            <br><br>
+            Number:<br>
+            <input type="text" name="cardNumber" value="">
+            <br><br>
+            Expiration Date:<br>
+            <input type="month" name="cardDate" value="">
+            <br><br>
+            Security Number:<br>
+            <input type="text" name="cardSecurity" value="">
+        </div>
+        <div style="position: relative; bottom: 370px;">Price:
+
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <p><br></p>
+</div>
+
+<div id ="footer">
+    Copyright &copy; 2015 Our Team</div>
+</body>
+</html>

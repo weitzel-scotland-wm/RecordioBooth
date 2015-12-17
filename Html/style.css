@@ -1,0 +1,99 @@
+body {
+    background-image: url("http://www.msrstudiosny.com/wp-content/uploads/2012/10/StudioB_960x540.jpg");
+    background-size: 100%;
+    color: white;
+    /*makes far background an image of a recording studio, and sets the color to white*/
+    background-attachment: fixed;
+}
+
+#header {
+    background-color:rgba(0,0,0,0.75);
+    width: 70%;
+    position: relative;
+    left: 15%;
+    text-align: center;
+}
+
+#nav{
+    background-color: rgba(0,0,0,0.75);
+    text-align: center;
+    width: 10%;
+    margin-left: 180px;
+    position: relative; left: -30%
+    left: 15%;
+}
+
+#content{
+    background-color:rgba(0,0,0,0.75);
+    text-align: center;
+    width: 55%;
+    position: relative;
+    right: -30%;
+    bottom: 170px;
+    -webkit-animation: fadein 2s;
+    color:white;
+
+
+}
+
+#footer{
+    background-color:rgba(0,0,0,0.75);
+    text-align: center;
+    width: 70%;
+    position: relative;
+    left: 15%;
+
+}
+/*sets the main divs and aligns them accordingly to make the website better spaced*/
+
+#homeButton{
+    height: 69px;
+    width: 120px;
+    float: left;
+    position: relative;
+    right: -188px;
+}
+/*styles out and positions the logo at top left of screen*/
+
+
+#bigContent{
+    background-color:rgba(0,0,0,0.75);
+    text-align: center;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    color:white
+/* alternative div used for forms that are intended to cover the whole page without the nav bar in the way*/
+}
+p , h3 , li {
+    color: white;
+}
+
+/*Animations*/
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to 	{opacity: 1;}
+}
+/*End of Animations*/
+#scroller {
+    position: relative;
+}
+#scroller .innerScrollArea {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#scroller ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#scroller li {
+    padding: 10px ;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+}
