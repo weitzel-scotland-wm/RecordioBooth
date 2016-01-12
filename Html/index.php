@@ -31,17 +31,17 @@ catch(PDOException $e)
 <body>
 
 <div id="loginSignUp">
-    <a href="signUp.html">
+    <a href="signUp.php">
         <button id="signUp" style="float:right;">Sign Up</button>
     </a>
     <!--Above is the sign up button that links you to the sign up page -->
-    <a href="login.html">
+    <a href="login.php">
     <button id="login" style="float:right;">Login</button>
     </a>
 </div>
 
 
-<a href="index.html">
+<a href="index.php">
 <button  id="homeButton" style="position: relative; z-index:1000"><img width="auto" height="100%" src="logo.png">
 </button></a>
 <!--Above is the home button, that refreshes the page back to the index-->
@@ -58,10 +58,10 @@ catch(PDOException $e)
 
 <div id="nav">
 
-    <a href="Careers.html"> <p>Careers</p> </a>
-    <a href="aboutUs.html"> <p>About Us</p> </a>
-    <a href="findUs.html"> <p>Find Us</p> </a>
-    <a href="Eula.html"> <p>Terms and Conditions</p> </a>
+    <a href="Careers.php"> <p>Careers</p> </a>
+    <a href="aboutUs.php"> <p>About Us</p> </a>
+    <a href="findUs.php"> <p>Find Us</p> </a>
+    <a href="Eula.php"> <p>Terms and Conditions</p> </a>
     <!--The nav bar contains lists and links across pages of html that direct you to different pages of the site-->
     <!--The nav will highlight in azure (white) depending on what pages you are on-->
 </div>

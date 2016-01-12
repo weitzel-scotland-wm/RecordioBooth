@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="scipt.js" type="text/javascript"></script>
+<script src="jquery.js" type="text/javascript"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Recordio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js"
+
+</head>
+<body>
+<!--Other pages are styled the same as the index and copied over-->
+<!--The inside of the content div is modified accordingly-->
+<div id="loginSignUp">
+    <a href="signUp.php">
+        <button id="signUp" style="float:right;">Sign Up</button>
+    </a>
+    <!--Above is the sign up button that links you to the sign up page -->
+    <a href="login.php">
+        <button id="login" style="float:right;">Login</button>
+    </a>
+</div>
+<a href="index.php">
+    <button  id="homeButton" style="position: relative; z-index:1000"><img width="auto" height="100%" src="logo.png">
+    </button></a>
+
+
+
+
+
+<div id="header">
+    <p style="font-size: 60px;font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+">Recordio</p>
+
+
+
+</div>
+
+<div id="nav">
+
+    <a href="Careers.php"> <p>Careers</p> </a>
+    <a href="aboutUs.php"> <p>About Us</p> </a>
+    <a href="findUs.php"> <p  style="background-color: darkred">Find Us</p> </a>
+    <a href="Eula.php"> <p>Terms and Conditions</p> </a>
+
+</div>
+
+<div id ="content">
+    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.4736411903805!2d-112.27398108505294!3d33.5150691532939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4042f08dfa89%3A0x1ee5090cabf66dd6!2sWest-Mec!5e0!3m2!1sen!2sus!4v1450399737921" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+</div>
+<div id ="footer">
+    Copyright &copy; 2015 Our Team</div>
+</body>
+</html>

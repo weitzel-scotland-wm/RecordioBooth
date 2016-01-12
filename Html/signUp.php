@@ -33,7 +33,7 @@ catch(PDOException $e)
     <button id="signUp" style="float:right;">Sign Up</button>
     <button id="login" style="float:right;">Login</button>
 </div>
-<a href="index.html">
+<a href="index.php">
     <button  id="homeButton" style="position: relative; z-index:1000"><img width="auto" height="100%" src="logo.png">
     </button></a>
 
