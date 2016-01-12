@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <script src="script.js" type="text/javascript"></script>
-<script src="jquery.js" type="text/javascript"></script>
-<link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
     <title>Recordio</title>
-
-
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
-<div id="loginSignUp" style="position: relative;right:200px;  z-index:1000;">
+<div id="loginSignUp">
     <a href="signUp.html">
         <button id="signUp" style="float:right;">Sign Up</button>
     </a>
     <!--Above is the sign up button that links you to the sign up page -->
-    <a href="login.html">
-        <button id="login" style="float:right;">Login</button>
-    </a>
+    <button id="login" style="float:right;">Login</button>
 </div>
 
 <a href="index.html">
@@ -32,18 +27,21 @@
 ">Recordio</p>
 </div>
 
-<div id="bigContent">
-    <p><br></p>
+<div id="loginInfo" style="color:white">
+    <br>
     <form action="action.php">
-        Username:<br>
-        <input type="text" name="username" value="">
-        <br>
-        Password:<br>
-        <input type="text" name="password" value="">
-        <br>
-        Confirm Password:<br>
-        <input type="text" name="password" value="">
-        <br><br>
+        <div style="position:relative;">
+            Username:<br>
+            <input type="name" name="name" value="" required>
+            <br>
+            Password:<br>
+            <input type="password" name="password" value="" required>
+            <br><br>
+        </div>
+
+        <div style="position: relative; bottom: 370px;">Price:
+
+        </div>
         <input type="submit" value="Submit">
     </form>
     <p><br></p>
@@ -52,4 +50,5 @@
 <div id ="footer">
     Copyright &copy; 2015 Our Team</div>
 </body>
+
 </html>
