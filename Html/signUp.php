@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-//---------------------------------------Variables------------------------------------------//
-$hostname = "localhost";
-$username = "root";
-$password = "root";
-//---------------------------------------Variables------------------------------------------//
+require_once("action.php");
+$error = false;
+$success = false;
 
-try {
-    $dbh = new PDO("mysql:host=$hostname;dbname=mysql", $username, $password);
-    echo 'Connected to database';
+if(@_POST["userSubmit"]){
 
+    if(!@_POST["username"]){
+        $error .= "<p>You must enter in an email!</p>"
+    }
 }
 
-catch(PDOException $e)
-    {
-        echo $e->getMessage();
-    }
 ?>
 <script src="scipt.js" type="text/javascript"></script>
 <script src="jquery.js" type="text/javascript"></script>
@@ -29,10 +24,16 @@ catch(PDOException $e)
 </head>
 <body>
 
-<div style="position: relative;right:187px;  z-index:1000;">
-    <button id="signUp" style="float:right;">Sign Up</button>
-    <button id="login" style="float:right;">Login</button>
+<div id='loginSignUp' style="position: relative; right:200px; z-index:1000;">
+    <a href='signUp.php'>
+        <button id="signUp" style="float:right;">Sign Up</button>
+    </a>
+    <!--Above is the sign up page !-->
+    <a href='login.php'>
+        <button id="login" style="float:right;">Login</button>
+    </a>
 </div>
+
 <a href="index.php">
     <button  id="homeButton" style="position: relative; z-index:1000"><img width="auto" height="100%" src="logo.png">
     </button></a>
@@ -45,17 +46,17 @@ catch(PDOException $e)
 
 <div id="bigContent">
     <p><br></p>
-    <form action="action.php">
-        Username:<br>
-        <input type="text" name="username" value="">
+    <form name="userSubmit" action="action.php">
         <br>
-        Password:<br>
-        <input type="text" name="password" value="">
+        <input type="text" name="username" placeholder="Username">
         <br>
-        Confirm Password:<br>
-        <input type="text" name="cpassword" value="">
+        <br>
+        <input type="text" name="firstname" placeholder="First Name">
+        <br>
+        <br>
+        <input type="text" name="lastname" placeholder="Last Name">
         <br><br>
-        <input type="submit" value="Submit">
+        <input type="submit" name="userSubmit" value="Submit">
     </form>
     <p><br></p>
 </div>
