@@ -10,18 +10,18 @@
 
 </head>
 <body>
-<!--Other html pages are styled the same as the index and copied over-->
+<!--Other pages are styled the same as the index and copied over-->
 <!--The inside of the content div is modified accordingly-->
 <div id="loginSignUp">
-    <a href="signUp.html">
+    <a href="signUp.php">
         <button id="signUp" style="float:right;">Sign Up</button>
     </a>
     <!--Above is the sign up button that links you to the sign up page -->
-    <a href="login.html">
+    <a href="login.php">
         <button id="login" style="float:right;">Login</button>
     </a>
 </div>
-<a href="index.html">
+<a href="index.php">
     <button  id="homeButton" style="position: relative; z-index:1000"><img width="auto" height="100%" src="logo.png">
     </button></a>
 
@@ -39,10 +39,10 @@
 
 <div id="nav">
 
-    <a href="Careers.html"> <p style="background-color: darkred">Careers</p> </a>
-    <a href="aboutUs.html"> <p>About Us</p> </a>
-    <a href="findUs.html"> <p>Find Us</p> </a>
-    <a href="Eula.html"> <p>Terms and Conditions</p> </a>
+    <a href="Careers.php"> <p style="background-color: darkred">Careers</p> </a>
+    <a href="aboutUs.php"> <p>About Us</p> </a>
+    <a href="findUs.php"> <p>Find Us</p> </a>
+    <a href="Eula.php"> <p>Terms and Conditions</p> </a>
 
 </div>
 
@@ -51,7 +51,7 @@
         <img width= 60px height= 60px src="logo.png"/>
     </div>
     <h3>Want to start a career with Recordio?</h3>
-    <p> click <a href="application.html">here</a> to fill out an application to send to our hiring managers.</p>
+    <p> click <a href="application.php">here</a> to fill out an application to send to our hiring managers.</p>
     <p> Your application should include but is not limited to:</p>
     <div id="appList">
     <ul>

@@ -13,6 +13,10 @@ try {
 
 catch(PDOException $e)
     {
-        echo $e->getMessage();
+        print "Error!: " . $e->getMessage() . "<br/>";
+        die();
     }
+
+ ini_set('display_errors',1);  
+ error_reporting(E_ALL);
 ?>

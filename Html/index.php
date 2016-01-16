@@ -1,24 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<?php
-
-$hostname = "localhost";
-$username = "root";
-$password = "root";
-
-try {
-    $dbh = new PDO("mysql:host=$hostname;dbname=RecordioBooth", $username, $password);
-    echo 'Connected to database';
-
-}
-
-catch(PDOException $e)
-    {
-        echo $e->getMessage();
-    }
-?>
-
 <head>
     <meta charset="UTF-8">
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -35,9 +17,7 @@ catch(PDOException $e)
         <button id="signUp" style="float:right;">Sign Up</button>
     </a>
     <!--Above is the sign up button that links you to the sign up page -->
-    <a href="login.php">
-    <button id="login" style="float:right;">Login</button>
-    </a>
+
 </div>
 
 
@@ -67,6 +47,13 @@ catch(PDOException $e)
 </div>
 
 <div id ="content">
+
+<?php
+require_once("action.php");
+$success = false;
+$error = false;
+?>
+<br>
     <div id="scroller" style="width: 550px; height: 400px; margin: 0 auto;">
         <div class="innerScrollArea">
             <ul>
@@ -79,7 +66,7 @@ catch(PDOException $e)
 </div>
 
 <div id ="footer">
-    Copyright &copy; 2015 Our Team
+    Copyright &copy; 2015 Recordio Team
 <!-- Copyright in the footer bar of our website-->
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>

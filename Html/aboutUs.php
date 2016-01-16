@@ -8,20 +8,19 @@
     <title>About Recordio</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel ="shortcut icon" href="logofinal_copy.ico"/>
 
 </head>
 <body>
 
-<!--Other pages are styled the same as the index and copied over-->
+<!--Other html pages are styled the same as the index and copied over-->
 <!--The inside of the content div is modified accordingly-->
 <div id="loginSignUp">
     <a href="signUp.php">
         <button id="signUp" style="float:right;">Sign Up</button>
     </a>
     <!--Above is the sign up button that links you to the sign up page -->
-    <a href="login.php">
-        <button id="login" style="float:right;">Login</button>
-    </a>
+
 </div>
 <a href="index.php">
     <button  id="homeButton" style="position: relative; z-index:1000"><img width="auto" height="100%" src="logo.png">

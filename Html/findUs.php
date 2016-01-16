@@ -48,6 +48,13 @@
 </div>
 
 <div id ="content">
+
+<?php
+require_once("action.php");
+$success = false;
+$error = false;
+?>
+<br>
     <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.4736411903805!2d-112.27398108505294!3d33.5150691532939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4042f08dfa89%3A0x1ee5090cabf66dd6!2sWest-Mec!5e0!3m2!1sen!2sus!4v1450399737921" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 </div>
 <div id ="footer">

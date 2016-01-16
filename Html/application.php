@@ -12,16 +12,16 @@
 
 
 <div id="loginSignUp">
-    <a href="signUp.html">
+    <a href="signUp.php">
         <button id="signUp" style="float:right;">Sign Up</button>
     </a>
     <!--Above is the sign up button that links you to the sign up page -->
-    <a href="login.html">
+    <a href="login.php">
         <button id="login" style="float:right;">Login</button>
     </a>
 </div>
 
-<a href="index.html">
+<a href="index.php">
     <button  id="homeButton" style="position: relative; z-index:1000"><img width="auto" height="100%" src="logo.png">
     </button>
 </a>
@@ -32,6 +32,12 @@
 </div>
 
 <div id="bigContent" style="color:white">
+<?php
+require_once("action.php");
+$success = false;
+$error = false;
+?>
+    <br>
     <br>
     <form action="action.php">
         <div style="position:relative; left:-33%">
@@ -68,6 +74,6 @@
 </div>
 
 <div id ="footer">
-    Copyright &copy; 2015 Our Team</div>
+    Copyright &copy; 2015 Recordio Team</div>
 </body>
 </html>

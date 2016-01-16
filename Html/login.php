@@ -48,7 +48,7 @@
 </div>
 
 <div id ="footer">
-    Copyright &copy; 2015 Our Team</div>
+    Copyright &copy; 2015 Recordio Team</div>
 </body>
 
 </html>
